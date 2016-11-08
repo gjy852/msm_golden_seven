@@ -8,6 +8,9 @@ class DirectorsController < ApplicationController
   end
 
   def delete
+    @director = Director.find(params[:id])
+    @director.destroy
+
   end
 
 

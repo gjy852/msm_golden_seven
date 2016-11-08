@@ -5,6 +5,5 @@ Rails.application.routes.draw do
   get('/directors/:id', { :controller => 'directors', :action => 'show_details' })
 
 # Delete - Directors
-  get('/delete_director/:id'), { :controller => 'directors', :action => 'delete'}
-
+  get('/delete_director/:id', { :controller => 'directors', :action => 'delete'})
 end
