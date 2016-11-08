@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+# Create - Directors
+  get('/directors/new_form', { :controller => 'directors', :action => 'new_form'})
+  get('/create_director', { :controller => 'directors', :action => 'create_row'})
+
 # Read - Directors
   get('/directors', { :controller => 'directors', :action => 'index' })
   get('/directors/:id', { :controller => 'directors', :action => 'show_details' })
@@ -7,6 +11,6 @@ Rails.application.routes.draw do
 # Delete - Directors
   get('/delete_director/:id', { :controller => 'directors', :action => 'delete'})
 
-# Create - Directors
-  get('/create_director', { :controller => 'directors', :action => 'new_form'})
+# Edit - Directors
+  get('/directors/:id/edit_form', { :controller => 'directors', :action => 'edit_form'})
 end
