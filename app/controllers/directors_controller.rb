@@ -1,17 +1,14 @@
 class DirectorsController < ApplicationController
   def index
-    render ("index")
+    @director = Director.all
   end
 
   def show_details
-    render ("show_details")
+    @director = Director.find(params[:id])
   end
 
-  def new_form
-    render ("new_form")
+  def delete
   end
 
-  def edit_form
-    render ("edit_form")
-  end
+
 end
