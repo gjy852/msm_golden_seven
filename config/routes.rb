@@ -13,4 +13,5 @@ Rails.application.routes.draw do
 
 # Edit - Directors
   get('/directors/:id/edit_form', { :controller => 'directors', :action => 'edit_form'})
+  get('/update_director/:id/update_row', { :controller => 'directors', :action => 'update_row'})
 end
