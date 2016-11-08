@@ -10,7 +10,9 @@ class DirectorsController < ApplicationController
   def delete
     @director = Director.find(params[:id])
     @director.destroy
+  end
 
+  def new_form
   end
 
 

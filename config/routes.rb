@@ -6,4 +6,7 @@ Rails.application.routes.draw do
 
 # Delete - Directors
   get('/delete_director/:id', { :controller => 'directors', :action => 'delete'})
+
+# Create - Directors
+  get('/create_director', { :controller => 'directors', :action => 'new_form'})
 end
